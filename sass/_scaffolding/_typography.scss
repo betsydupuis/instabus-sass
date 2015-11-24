@@ -7,11 +7,13 @@
 body {
     font-family: $base-font-family;
     font-size: 100%;
+    color: #333;
 }
 
 //  Headers
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+    font-weight: 600;
 }
 
 h1, h2 {
@@ -44,4 +46,16 @@ h3 {
 
 .indent-default {
     padding: 12px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
 }

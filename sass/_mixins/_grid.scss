@@ -2,6 +2,10 @@
     width: $column-count / $grid-columns-total * 100%;
 }
 
+@function make-offset($column-count, $grid-columns-total) {
+    @return ($column-count / $grid-columns-total) * 100%;
+}
+
 @mixin col-flex {
     display: -webkit-flex;
     display: -ms-flexbox;
