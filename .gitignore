@@ -66,6 +66,7 @@ node_modules
 sftp-config.json
 
 #-----------------
-# Sass
+# CSS / Sass
 #-----------------
 *.scssc
+*.css.map
