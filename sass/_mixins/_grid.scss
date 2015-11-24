@@ -53,19 +53,19 @@
 
 /*Container Flushing*/
 
-// .container-flush-left {
-//     margin-left: $viewport-margin * -1;
-// }
+@mixin container-flush-left {
+    padding-left: 0;
+}
 
-// .container-flush-right {
-//     margin-right: $viewport-margin * -1;
-// }
+@mixin container-flush-right {
+    padding-right: 0;
+}
 
-// .container-flush-both {
-//     @extend .container-flush-left;
-
-//     @extend .container-flush-right;
-// }
+@mixin container-flush-both {
+    overflow-x: hidden;
+    @include container-flush-left;
+    @include container-flush-right;
+}
 
 // /*Row Flushing*/
 $row-flushing-offset: ($viewport-margin + $grid-gutter-width / 2) * -1;

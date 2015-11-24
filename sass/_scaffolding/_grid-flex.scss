@@ -341,11 +341,17 @@ $row-flushing-offset: ($viewport-margin + $grid-gutter-width / 2) * -1;
 // to tablets.
 
 @media (max-width: $screen-sm-min - 1px) {
+    .container-flush-both-xs {
+        @include container-flush-both;
+    }
     .row-flush-both-xs {
         @include row-flush-both;
     }
     .col-flush-both-xs {
         @include col-flush-both;
+    }
+    .no-padding-xs {
+        padding: 0;
     }
 }
 
